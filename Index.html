@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <title>Players-Data</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div>
+          <a href="./Index.html">
+            <img
+              id="player-avatar"
+              src="https://image.flaticon.com/icons/png/512/166/166364.png"
+              alt="player-avatar"
+            />
+          </a>
+        </div>
+        <div>
+          <form action="/">
+            <img
+              class="search_icon"
+              src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1626198759/search-icon_elwgui.svg"
+              alt="Search Icon"
+            />
+            <input
+              type="text"
+              placeholder="Enter the Player"
+              name="search-box"
+              id="search-box"
+              value=""
+              onkeyup="search_boxs()"
+            />
+          </form>
+        </div>
+        <div><span>Add</span></div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="cards">
+        <a href="./teams.html?t=1">
+          <div class="CSK team-card" id="clickTeam1">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/Chennai-Super-Kings-logo-design-IPL-650x650.jpg"
+              alt="ChennaiSuperKings"
+            />
+            <h3 class="CSK-head head-shade">CHENNAI SUPER KINGS</h3>
+          </div>
+        </a>
+
+        <a href="./teams.html?t=2">
+          <div class="DC team-card">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/Delhi-Capitals-logo-design-IPL-650x650.jpg"
+            />
+            <h3 class="DC-head head-shade">DELHI CAPITALS</h3>
+          </div>
+        </a>
+
+        <a href="./teams.html?t=3">
+          <div class="MI team-card">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/Mumbai-Indians-logo-design-IPL-650x650.jpg"
+              alt=""
+            />
+            <h3 class="MI-head head-shade">MUMBAI INDIANS</h3>
+          </div>
+        </a>
+
+        <a href="./teams.html?t=4">
+          <div class="SRH team-card">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/SunRisers-Hyderabad-logo-design-IPL-650x650.jpg"
+            />
+            <h3 class="SRH-head head-shade">SUNRISERS HYDERABAD</h3>
+          </div>
+        </a>
+      </div>
+
+      <div class="cards">
+        <a href="./teams.html?t=5">
+          <div class="PK team-card">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/Punjab-Kings-logo-design-IPL-650x650.jpg"
+            />
+            <h3 class="PK-head head-shade">PUNJAB KINGS</h3>
+          </div>
+        </a>
+
+        <a href="./teams.html?t=6">
+          <div class="RR team-card">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/Rajasthan-Royals-logo-design-IPL-650x650.jpg"
+            />
+            <h3 class="RR-head head-shade">RAJASTHAN ROYALS</h3>
+          </div>
+        </a>
+
+        <a href="./teams.html?t=7">
+          <div class="KKR team-card">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/KKR-logo-design-IPL-650x650.jpg"
+            />
+            <h3 class="KKR-head head-shade">KOLKATA KNIGHT RIDERS</h3>
+          </div>
+        </a>
+
+        <a href="./teams.html?t=8">
+          <div class="RCB team-card">
+            <img
+              class="teams"
+              src="https://whiteandblack.in/wp-content/uploads/2021/04/RCB-logo-design-IPL-650x650.jpg"
+            />
+            <h3 class="RCB-head head-shade">ROYAL CHALLENGERS BANGLORE</h3>
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

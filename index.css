@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url("https://www.thestatesman.com/wp-content/uploads/2020/09/QT-Cricket.jpg");
+  background-size: auto;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+.header {
+  box-shadow: 0 2px 10px #ccc;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, orange, white, green);
+  z-index: 100;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#player-avatar {
+  width: 50px;
+  border-radius: 50%;
+}
+form {
+  border: 1px solid black;
+  width: 230px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+button,
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+  outline: unset;
+}
+input {
+  font-size: 16px;
+  border: unset;
+  width: 100%;
+  color: black;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+.search_icon {
+  width: 16px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.teams {
+  width: 100%;
+  box-shadow: 0px 1px 0px #ccc;
+  margin-bottom: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.team-card {
+  box-shadow: 0 0px 5px #ccc;
+  margin: 0 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: linear-gradient(225deg, #cbd8e9, #e9eef5);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+.cards:first-of-type {
+  margin-top: 130px;
+}
+.cards {
+  margin: 20px 40px;
+  display: flex;
+}
+.team-card:hover {
+  transform: scale(1.1);
+  text-shadow: 5px 10px 20px rgba(#3d3c3e, red, 0.2);
+}
+.team-card > h3 {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+.head-shade {
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+.head-shade:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 5px 10px 20px rgba(#3d3c3e, red, 0.2);
+}
+.CSK-head {
+  background-image: linear-gradient(105deg, #007de2, #f7f73a);
+}
+.MI-head {
+  background-image: linear-gradient(105deg, #caa63c, #00499b);
+}
+.RR-head {
+  background-image: linear-gradient(105deg, #f63ef7, #0831f7);
+}
+.PK-head {
+  background-image: linear-gradient(105deg, #e61a23, #d5d6d8);
+}
+.KKR-head {
+  background-image: linear-gradient(105deg, #ad9c22, #2d0851);
+}
+.DC-head {
+  background-image: linear-gradient(105deg, #e81a22, #000087);
+}
+.SRH-head {
+  background-image: linear-gradient(105deg, #000000, #f77e29);
+}
+.RCB-head {
+  background-image: linear-gradient(105deg, #2a2928, #caa63c, #e51b23);
+}

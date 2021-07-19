@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./teams.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./player.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div>
+          <a href="./Index.html">
+            <img
+              id="player-avatar"
+              src="https://image.flaticon.com/icons/png/512/166/166364.png"
+              alt="player-avatar"
+            />
+          </a>
+        </div>
+        <div>
+          <form action="/">
+            <img
+              class="search_icon"
+              src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1626198759/search-icon_elwgui.svg"
+              alt="Search Icon"
+            />
+            <input
+              type="text"
+              placeholder="Enter the Player"
+              name="search-box"
+              id="search-box"
+              value=""
+              onkeyup="search_boxs()"
+            />
+          </form>
+        </div>
+        <div><span>Add</span></div>
+      </nav>
+    </header>
+
+    <main class="teams-main">
+      <div id="player_wrapper">
+        <img
+          class="play_image"
+          src="https://i.pinimg.com/736x/3f/94/70/3f9470b34a8e3f526dbdb022f9f19cf7.jpg"
+          alt=""
+        />
+        <div class="player_details">
+          <h1 class="name_play"></h1>
+          <h3 class="play_name"></h3>
+          <h4 class="play_price"></h4>
+          <h5 class="play_role"></h5>
+          <h5 class="play_play"></h5>
+        </div>
+      </div>
+
+      <script src="./player.js"></script>
+    </main>
+  </body>
+</html>

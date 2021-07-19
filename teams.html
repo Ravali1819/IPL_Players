@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./teams.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div>
+          <a href="./Index.html">
+            <img
+              id="player-avatar"
+              src="https://image.flaticon.com/icons/png/512/166/166364.png"
+              alt="player-avatar"
+            />
+          </a>
+        </div>
+        <div>
+          <form action="/">
+            <img
+              class="search_icon"
+              src="https://res.cloudinary.com/dt2q0lr2m/image/upload/v1626198759/search-icon_elwgui.svg"
+              alt="Search Icon"
+            />
+            <input
+              type="text"
+              placeholder="Enter the Player"
+              name="search-box"
+              id="search-box"
+              value=""
+              onkeyup="search_boxs()"
+            />
+          </form>
+        </div>
+        <div id="add"><i class="far fa-plus-square"></i></div>
+      </nav>
+    </header>
+
+    <main class="teams-main">
+      <div class="container">
+        <!-- <div class="logo">
+          <img src="https://i.postimg.cc/WzG7WGcr/csk3.png" alt="" />
+        </div> -->
+
+        <div class="background">
+          <img
+            src="https://images.indianexpress.com/2020/09/ipl-schedule.jpg"
+            id="logobg"
+            alt=""
+          />
+        </div>
+
+        <div class="heading">
+          <h1 id="head"></h1>
+        </div>
+
+        <div class="image">
+          <img
+            id="myimage"
+            src="https://bsmedia.business-standard.com/_media/bs/img/about-page/thumb/464_464/1600047009.jpg"
+            alt=""
+          />
+        </div>
+
+        <!-- <div class="navbar">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#" id="teams"><li>Team</li></a>
+            <a href="#" id="top_player"><li>Performance</li></a>
+            <a href="#" id="won"><li>Rank</li></a>
+          </ul>
+        </div> -->
+
+        <div class="team-count"></div>
+
+        <div class="empty"></div>
+
+        <div class="list">
+          <ol>
+            <li
+              id="clickTeam1"
+              onclick="myFun( 'https://i.postimg.cc/kMKwgmR4/csk.png', 'gold', 'Chennai Super Kings','https://i.postimg.cc/WzG7WGcr/csk3.png')"
+            >
+              CSK
+            </li>
+
+            <li
+              id="clickTeam2"
+              onclick="myFun('https://i.postimg.cc/rwnNPy3h/dd1.png', 'blue', 'Delhi Capitals','https://i.postimg.cc/t95S6pSn/ddlogo.png')"
+            >
+              DC
+            </li>
+            <li
+              id="clickTeam3"
+              onclick="myFun('https://i.postimg.cc/KvQP1vGZ/mi.png', 'dodgerblue', 'Mumbai Indians', 'https://i.postimg.cc/9QnyB8wK/milogo.png')"
+            >
+              MI
+            </li>
+            <li
+              id="clickTeam4"
+              onclick="myFun('https://i.postimg.cc/BQhFqYpb/srh.png', 'orangered', 'Sun Raise Hydrabad', 'https://i.postimg.cc/W1hktGYn/srhlogo.png')"
+            >
+              SRH
+            </li>
+            <li
+              id="clickTeam5"
+              onclick="myFun('https://i.postimg.cc/pVfYtJ35/kp.png', 'red', 'King XI Punjab','https://i.postimg.cc/mgDQCfk7/kplogo.png')"
+            >
+              KXIP
+            </li>
+            <li
+              id="clickTeam6"
+              onclick="myFun('https://i.postimg.cc/Zn4NqXXB/rr.png', '#ff3385', 'Rajastan Royals', 'https://i.postimg.cc/L5D1gNMy/rrlogo.png')"
+            >
+              RR
+            </li>
+            <li
+              id="clickTeam7"
+              onclick="myFun('https://i.postimg.cc/NFk17QRk/kkr.png', 'purple', 'Kolkata Knight Riders', 'https://i.postimg.cc/MTR0H7T4/kkrlogo.png')"
+            >
+              KKR
+            </li>
+            <li
+              id="clickTeam8"
+              onclick="myFun('https://i.postimg.cc/FRjcNhCX/rcb-removebg-preview.png', 'purple', 'Royal Challengers Bangalore', 'https://i.postimg.cc/KYWQRc5K/csblogo.png')"
+            >
+              RCB
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <script src="./index.js"></script>
+    </main>
+  </body>
+</html>

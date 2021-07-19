@@ -1,0 +1,44 @@
+.add {
+  cursor: pointer;
+}
+
+.play_image {
+  position: fixed;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  opacity: 1;
+}
+.play_name {
+  position: fixed;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.name_play {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+.play_price {
+  position: fixed;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play_role {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.play_play {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
